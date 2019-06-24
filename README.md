@@ -13,7 +13,7 @@ You need to insert your firebase.js config in the configs folder in order for th
     console.log(socket.id);
 
     socket.on("SEND_CHAT", (data) => {
-      io.emit("RECIEVE_CHAT", data);
+      io.emit("RECEIVE_CHAT", data);
     })
   });
 ```
