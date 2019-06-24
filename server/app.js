@@ -11,7 +11,7 @@ io.on('connection', (socket) => {
   console.log(socket.id);
 
   socket.on("SEND_CHAT", (data) => {
-    io.emit("RECIEVE_CHAT", data);
+    io.emit("RECEIVE_CHAT", data);
   })
 });
 

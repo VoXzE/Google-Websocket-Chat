@@ -13,7 +13,7 @@ export default class ChatBox extends Component {
 
     this.socket = io('localhost:8080'); 
     
-    this.socket.on("RECIEVE_CHAT", (data) => {
+    this.socket.on("RECEIVE_CHAT", (data) => {
       addChatMessage(data);
     });
 
