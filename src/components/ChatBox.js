@@ -44,8 +44,11 @@ export default class ChatBox extends Component {
         <div className="chat-messages">
           {this.state.messages && this.state.messages.map((message) => (
             <div className="chat-message">
-              <h1>{message.name}</h1>
-              <p>{message.text}</p>
+              <img src="https://cdn.dribbble.com/users/962743/screenshots/6447317/artboard_2x_2x.png"/>
+              <div>
+                <h1>{message.name}</h1>
+                <p>{message.text}</p>
+              </div>
             </div>
           ))}
         </div>

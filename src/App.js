@@ -53,7 +53,7 @@ export default class App extends Component {
       )
     }
     return (
-      <div className="App">
+      <div className="container">
         {/* {user && user.displayName} */}
         {user && <ChatBox name={user.displayName}/>}
         <button onClick={this.handleSignIn}>Sign In</button>
