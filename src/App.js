@@ -54,8 +54,14 @@ export default class App extends Component {
     }
     return (
       <div className="container">
-        {/* {user && user.displayName} */}
-        {user && <ChatBox name={user.displayName}/>}
+        {user && 
+          <ChatBox 
+            name={user.displayName}
+            avatar={user.photoURL}
+            socket="localhost:8080"
+            // showAvatars={false}
+          />
+        }
         <button onClick={this.handleSignIn}>Sign In</button>
         <button onClick={this.handleSignOut}>Sign Out</button>
       </div>
